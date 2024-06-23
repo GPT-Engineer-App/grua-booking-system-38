@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { LoadScript, GoogleMap, Marker, DirectionsService, DirectionsRenderer } from '@react-google-maps/api';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
+import AuthenticationDomainFacade from 'path-to-authentication-domain-facade';
 
 const stripePromise = loadStripe('your-publishable-key-here');
 
@@ -73,7 +74,7 @@ const BookingForm = () => {
 
     try {
       console.log('Submitting form with data:', formData);
-      const response = await fetch('https://valid-endpoint-for-booking.com/bookings', {
+      const response = await fetch('https://placeholder-url-for-testing.com/bookings', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
