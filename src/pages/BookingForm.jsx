@@ -4,7 +4,6 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { LoadScript, GoogleMap, Marker, DirectionsService, DirectionsRenderer } from '@react-google-maps/api';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
-import AuthenticationDomainFacade from 'path-to-authentication-domain-facade';
 
 const stripePromise = loadStripe('your-publishable-key-here');
 
